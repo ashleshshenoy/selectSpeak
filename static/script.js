@@ -104,7 +104,10 @@ pasteContainer.addEventListener("change", () => {
 
 
 //javascript for pwa
-if ("serviceWorker" in navigator) {
-  // register service worker
-  navigator.serviceWorker.register("service-worker.js");
+<script>
+if('serviceWorker' in navigator){
+  navigator.serviceWorker.register('/service-worker.js');
+} else {
+  console.log("Service worker is not supported");
 }
+</script>

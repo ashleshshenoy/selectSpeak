@@ -4,18 +4,15 @@
     "start_url": "index.html",
     "scope": "./",
     "icons": [
+      
       {
-        "src": "static/clipart.png",
-        "sizes": "192x192",
-        "type": "image/png"
-      },
-      {
-        "src": "contract.png",
+        "src": "static/clipart.jpg",
         "sizes": "512x512",
         "type": "image/png"
       }
     ],
-    "theme_color": "#ffd31d",
-    "background_color": "#333",
-    "display": "standalone"
+    "theme_color": "black",
+    "background_color": "white",
+    "display": "standalone",
+    "orientation":"portrait"
   }
