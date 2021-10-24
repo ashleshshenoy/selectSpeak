@@ -1,0 +1,111 @@
+:root {
+  --blue: #1e90ff;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-image: url("clipart.jpg");
+  background-size: cover;
+}
+
+
+.container {
+  max-width: 400;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 5px solid var(--blue);
+  border-radius: 5px;
+  background-color: white;
+}
+
+  
+.title-text {
+  background-color: white;
+  font-family: monospace;
+  color: var(--blue);
+  font-size: 1.3em;
+  margin: 2rem;
+}
+
+#paste-container {
+  box-sizing: border-box;
+  padding: 20px;
+  resize: none;
+  width: 100%;
+  height: 12rem;
+  border-left: 0px;
+  border-right: 0px;
+  border-top: 0px;
+  border-bottom: 30px solid var(--blue);
+  outline: 2px solid var(--blue);
+}
+#paste-container:focus {
+  outline: 2px solid var(--blue);
+}
+#paste-container::-webkit-scrollbar {
+  width: 0.5em;
+}
+
+#paste-container::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+#paste-container::-webkit-scrollbar-thumb {
+  background-color: var(--blue);
+}
+
+.btn-container {
+  margin-top: 2rem;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+button {
+  min-width: 100px;
+  border-radius: 5px;
+  margin: 5px;
+  padding: 5px;
+  background-color: transparent;
+  border: 2px solid var(--blue);
+}
+
+#voice-select {
+  background-color: transparent;
+  border: 2px solid var(--blue);
+  border-radius: 5px;
+  margin: 5px;
+  padding: 5px;
+  width: 100px;
+  background-color: transparent;
+}
+
+button:hover {
+  background-color: var(--blue);
+  color: white;
+}
+
+.controller {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+}
+
+.control-container {
+  text-align: center;
+  margin: 10px;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid var(--blue);
+  width: 100%;
+}
+input::-webkit-slider-thumb {
+  cursor: pointer; /* Cursor on hover */
+}
