@@ -3,11 +3,14 @@
 }
 
 body {
+  min-height: 100vh;
   display: flex;
   align-items: center;
-  flex-direction: column;
-  background-image: url("clipart.jpg");
-  background-size: cover;
+  justify-content: center;
+
+  flex-direction: row;
+  background-image: url("background.jpg");
+
 }
 
 
@@ -16,34 +19,34 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 5px solid var(--blue);
-  border-radius: 5px;
-  background-color: white;
+
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 3px );
+-webkit-backdrop-filter: blur( 3px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 
-  
-.title-text {
-  background-color: white;
-  font-family: monospace;
-  color: var(--blue);
-  font-size: 1.3em;
-  margin: 2rem;
-}
 
 #paste-container {
   box-sizing: border-box;
   padding: 20px;
   resize: none;
   width: 100%;
+  color: white;
   height: 12rem;
   border-left: 0px;
   border-right: 0px;
   border-top: 0px;
-  border-bottom: 30px solid var(--blue);
-  outline: 2px solid var(--blue);
+  background-color: transparent;
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 3px );
+  -webkit-backdrop-filter: blur( 3px );
+  border-radius: 0px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+
 }
 #paste-container:focus {
-  outline: 2px solid var(--blue);
 }
 #paste-container::-webkit-scrollbar {
   width: 0.5em;
@@ -67,26 +70,33 @@ body {
 }
 
 button {
-  min-width: 100px;
-  border-radius: 5px;
+  background-color: transparent;
   margin: 5px;
   padding: 5px;
-  background-color: transparent;
-  border: 2px solid var(--blue);
+  width: 100px;
+  color:white;
+  border-radius: 10px;
 }
 
 #voice-select {
   background-color: transparent;
-  border: 2px solid var(--blue);
-  border-radius: 5px;
   margin: 5px;
   padding: 5px;
   width: 100px;
+  color:white;
+  border-radius: 10px;
+}
+select option {
   background-color: transparent;
+  color: black;
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 3px );
+  -webkit-backdrop-filter: blur( 3px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 
 button:hover {
-  background-color: var(--blue);
   color: white;
 }
 
@@ -96,6 +106,7 @@ button:hover {
   flex-direction: column;
   align-items: center;
   width: 90%;
+  color: white;
 }
 
 .control-container {
@@ -103,7 +114,6 @@ button:hover {
   margin: 10px;
   padding: 5px;
   border-radius: 5px;
-  border: 1px solid var(--blue);
   width: 100%;
 }
 input::-webkit-slider-thumb {
